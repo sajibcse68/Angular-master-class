@@ -14,6 +14,4 @@ export class CoursesComponent {
     const service = new CoursesService();
     this.courses = service.getCourses();
   }
-
-
 }
