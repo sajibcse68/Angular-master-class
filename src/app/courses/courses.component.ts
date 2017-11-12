@@ -11,6 +11,7 @@ export class CoursesComponent {
   imgUrl = 'http://images.all-free-download.com/images/graphiclarge/butterfly_flower_01_hd_pictures_166973.jpg';
   colSpan = 2;
   courses;
+  isActive = true;
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();

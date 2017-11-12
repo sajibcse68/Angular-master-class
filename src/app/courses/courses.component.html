@@ -7,8 +7,8 @@
 
     <img [src]="imgUrl" />
 
-    <button class="btn btn-primary">Save</button>
-    
+    <button class="btn btn-primary" [class.active]="isActive">Save</button>
+
     <table>
       <tr>
         <td [attr.colspan]="colSpan"></td>
