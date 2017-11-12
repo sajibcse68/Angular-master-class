@@ -8,6 +8,7 @@ import { CoursesService } from '../courses.service';
 })
 export class CoursesComponent {
   title = 'List of Courses';
+  imgUrl = 'http://images.all-free-download.com/images/graphiclarge/butterfly_flower_01_hd_pictures_166973.jpg';
   courses;
 
   constructor(service: CoursesService) {
