@@ -25,4 +25,7 @@ export class CoursesComponent {
   onDivClicked() {
     console.log('Div is clicked!');
   }
+  onEnterPressed() {
+    console.log('Enter is pressed!');
+  }
 }
