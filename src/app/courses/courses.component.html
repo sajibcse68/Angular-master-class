@@ -14,7 +14,7 @@
     <button (click)="onSave($event)">Event Binding</button>
     </div>
 
-    <input (keyup.enter)="onEnterPressed()"/>
+    <input #email (keyup.enter)="onEnterPressed(email.value)"/>
     <table>
       <tr>
         <td [attr.colspan]="colSpan"></td>

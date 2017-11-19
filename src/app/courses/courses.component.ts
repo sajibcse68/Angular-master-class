@@ -25,7 +25,8 @@ export class CoursesComponent {
   onDivClicked() {
     console.log('Div is clicked!');
   }
-  onEnterPressed() {
-    console.log('Enter is pressed!');
+  onEnterPressed(email) {
+    // console.log($event.target.value);
+    console.log('email: ', email);
   }
 }
