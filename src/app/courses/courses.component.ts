@@ -12,11 +12,13 @@ export class CoursesComponent {
   colSpan = 2;
   courses;
   isActive = true;
+  email = 'sajib@example.com';
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
 
+  // event handling, stop event bubbling
   onSave($event) {
     $event.stopPropagation();
     console.log('Button was clicked!');
@@ -25,8 +27,15 @@ export class CoursesComponent {
   onDivClicked() {
     console.log('Div is clicked!');
   }
-  onEnterPressed(email) {
+
+  // use template variable
+  onEnterPressed(emaill) {
     // console.log($event.target.value);
-    console.log('email: ', email);
+    console.log('email: ', emaill);
+  }
+
+  // two way binding
+  onClickedTwoWayBinding() {
+    console.log('Email: ', this.email);
   }
 }

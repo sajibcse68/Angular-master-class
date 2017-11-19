@@ -14,7 +14,11 @@
     <button (click)="onSave($event)">Event Binding</button>
     </div>
 
-    <input #email (keyup.enter)="onEnterPressed(email.value)"/>
+    <input #emaill (keyup.enter)="onEnterPressed(emaill.value)"/><br>
+
+    <!-- two way binding -->
+    <input [(ngModel)]="email" (keyup.enter)="onClickedTwoWayBinding()" />
+
     <table>
       <tr>
         <td [attr.colspan]="colSpan"></td>
