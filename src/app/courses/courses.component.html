@@ -23,6 +23,17 @@
       <tr>
         <td [attr.colspan]="colSpan"></td>
       </tr>
-    </table>
+    </table><br><br><br>
+    
+    <!--- use pipes -->
+    <ul>
+      <li>{{ course.title | uppercase }}</li>
+      <li>{{ course.rating | number }}</li>
+      <li>{{ course.students | number:'1.2-2' }}</li>
+      <li>{{ course.price | currency:'AUD':true:'3.1-2' }}</li>
+      <li>{{ course.releaseDate | date:'shortDate' }}</li>
+    </ul>
+
+
   </ul>
 
