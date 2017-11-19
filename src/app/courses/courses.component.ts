@@ -13,7 +13,7 @@ export class CoursesComponent {
   courses;
   isActive = true;
   email = 'sajib@example.com';
-
+  text = 'Lorem Ipsum is simply dummy industry. Lorem Ipsen an unknown printer took a galley of type and scrambled it to';
   course = {
     title: 'The Complete Angular Course',
     rating: 4.9745,
