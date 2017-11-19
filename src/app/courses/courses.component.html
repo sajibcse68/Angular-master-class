@@ -9,7 +9,10 @@
 
     <button class="btn btn-primary" [class.active]="isActive">Save</button>
     <button [style.background]="isActive ? 'blue' : 'white' ">Style Binding</button>
+    
+    <div (click)="onDivClicked()">
     <button (click)="onSave($event)">Event Binding</button>
+    </div>
 
     <table>
       <tr>
