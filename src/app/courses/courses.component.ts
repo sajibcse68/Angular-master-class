@@ -16,4 +16,9 @@ export class CoursesComponent {
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
+
+  onSave($event) {
+    console.log('Button was clicked!');
+    console.log('$event: ', $event);
+  }
 }
