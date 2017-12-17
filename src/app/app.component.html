@@ -23,7 +23,10 @@
 <favorite [isFavorite]="post.isFavorite"></favorite>
 
 <bootstrap-panel>
+  <!-- this will replaced <ng-container> with div, class, innerHTML, etc.
   <div class="heading">Heading</div>
+  -->
+  <ng-container class="heading">Heading</ng-container>
   <div class="body">
      <h2>Body</h2>
      <p>Some content here...</p>
