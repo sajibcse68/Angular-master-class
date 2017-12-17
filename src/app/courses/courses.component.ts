@@ -26,6 +26,8 @@ export class CoursesComponent {
     this.courses = service.getCourses();
   }
 
+  viewMode = 'map';
+
   // event handling, stop event bubbling
   onSave($event) {
     $event.stopPropagation();
