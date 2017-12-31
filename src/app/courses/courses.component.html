@@ -61,3 +61,13 @@
     <div *ngSwitchDefault>Otherwise</div>
   </div>
 
+  <div id='books'>
+    <button (click)="onBookAdd()">Add</button>
+    <ul>
+      <li *ngFor="let book of books">
+        {{ book.name }}
+        <button (click)="onRemoveBook(book)">Remove</button>
+        <button (click)="onChangeBook(book)">Change</button>
+      </li>
+    </ul>
+  </div>
