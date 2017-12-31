@@ -22,11 +22,7 @@ export class CoursesComponent {
     releaseDate: new Date(2016, 3, 1)
   };
 
-  books = [
-    { id: 1, name: 'book1' },
-    { id: 2, name: 'book2' },
-    { id: 3, name: 'book3' },
-  ];
+  books;
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
@@ -55,6 +51,15 @@ export class CoursesComponent {
     console.log('Email: ', this.email);
   }
 
+  // load default books
+ onLoadBooks() {
+    this.books = [
+      { id: 1, name: 'book1' },
+      { id: 2, name: 'book2' },
+      { id: 3, name: 'book3' },
+    ];
+  }
+
   // add a book
   onBookAdd() {
     this.books.push({ id: 4, name: 'book4' });
@@ -67,5 +72,11 @@ export class CoursesComponent {
 
   onChangeBook(book) {
     book.name = 'sajib';
+  }
+
+  trackBooks(index, book) {
+    console.log('index: ', index);
+    console.log('book: ', book);
+    return book ? book.id : undefined;
   }
 }

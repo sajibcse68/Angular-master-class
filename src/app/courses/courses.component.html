@@ -62,9 +62,10 @@
   </div>
 
   <div id='books'>
+    <button (click)="onLoadBooks()">Load Books</button>
     <button (click)="onBookAdd()">Add</button>
     <ul>
-      <li *ngFor="let book of books">
+      <li *ngFor="let book of books; trackBy trackBooks">
         {{ book.name }}
         <button (click)="onRemoveBook(book)">Remove</button>
         <button (click)="onChangeBook(book)">Change</button>
