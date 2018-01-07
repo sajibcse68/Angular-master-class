@@ -12,4 +12,11 @@ export class AppComponent {
     isFavorite: true
   };
   canSave = true;
+
+  ob = {
+    assignee: null
+    /*
+    assignee: { name: 'sajib' }
+    */
+  };
 }
