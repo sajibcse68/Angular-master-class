@@ -30,5 +30,26 @@
   <div class="body">
      <h2>Body</h2>
      <p>Some content here...</p>
+  
+  <!-- 
+  <button
+  [style.backgroundColor]="canSave ? 'blue' : 'gray'"
+  [style.color]="canSave ? 'white' : 'black'"
+  [style.fontWeight]="canSave ? 'bold' : 'normal'"
+  >
+  Can Save
+  </button>
+ -->
+ <button
+ [ngStyle]="{
+   'backgroundColor': canSave ? 'blue' : 'gray',
+   'color': canSave ? 'white' : 'black',
+   'fontWeight': canSave ? 'bold' : 'normal'
+ }"
+ >
+Can Save
+ </button>
+
   </div>
+
 </bootstrap-panel>
